@@ -9,20 +9,20 @@ Tipe adalah format penyimpanan data. Fungsi tipe data adalah mempresentasikan su
 3. Tipe Data Koleksi
 
 ### 1. Tipe data Primitif
-Tipe data primitif adalah tipe data yang sudah ditentukan oleh sistem, tipe data primitif ini disediakan oleh banyak bahasa pemrograman, perbedaannya terletak pada jumlah bit yang dialokasikan untuk setiap bit pada tipe data primitif tergantung pada bahasa pemrograman,compiler dan sistem operasinya. Contoh tipe data primitif adalah : 
-1. Int : adalah tipe data yang digunakan untuk menyimpan bilangan bulat seperti 12, 1, 4, dan sebagainya. 
-2. Float : tipe data yang digunakan untuk menyimpan bilangan desimal seperti 1.5, 2.1, 3.14, dan sebagainya. 
-3. Char : berfungsi untuk menyimpan data berupa sebuah huruf. Biasanya digunakan untuk simbol seperti A, B, C dan seterusnya 
-4. Boolean : tipe data ini digunakan untuk menyimpan nilai boolean yang hanya memiliki dua nilai yaitu true dan false.
+Tipe data primitif adalah tipe data yang  ditentukan sistem. Tipe data primitif ini disediakan oleh banyak bahasa pemrograman, perbedaannya terletak pada jumlah bit yang dialokasikan untuk setiap bit dalam tipe data primitif, tergantung pada bahasa pemrograman, compiler, dan sistem operasi. Contoh tipe data primitif adalah: 
+1. Int, adalah untuk Bilangan Bulat
+2. Float, adalah untuk Bilangan Desimal
+3. Char, adalah Huruf.
+4. Boolean, adalah True dan False.
 
 ### 2. Tipe Data Abstrak
 Tipe data abstrak (Abstract Data Type - ADT) adalah konsep ilmu komputer yang memberikan spesifikasi matematis dari suatu tipe data dan operasi yang dapat dilakukan pada tipe data tersebut tanpa memberikan implementasi konkrit. ADT memisahkan  apa yang perlu dilakukan (spesifikasi) dan bagaimana hal itu perlu dilakukan (implementasi).
 
 ### 3. Tipe Data Koleksi
-Tipe data koleksi (Collection Data Type) adalah tipe data yang digunakan untuk mengelompokkan dan menyimpan beberapa nilai atau objek secara bersamaan. Tipe data koleksi memungkinkan Anda menyimpan, mengelola, dan mengakses sejumlah besar data dengan cara yang terstruktur. Tipe data koleksi yang umum digunakan dalam pemrograman :
-1. Array : Array adalah struktur data statis yang menyimpan elemen-elemen dengan tipe data yang sama. Elemen-elemen tersebut dapat diakses dengan menggunakan indeks. Array memiliki ukuran tetap yang ditentukan saat deklarasi.
-2. Vector : Vector adalah Standard Template Library (STL) jika di dalam C/C++ memiliki bentuk std::vector . Umumnya, vector mirip seperti array yang memiliki kemampuan untuk menyimpan data dalam bentuk elemen-elemen yang alokasi memorinya dilakukan otomatis dan bersebelahan. Kemampuan vector bukan hanya pada jumlah elemen yang dinamis, vector pada C/C++ juga dilengkapi dengan fitur-fitur pelengkap seperti element access, iterators, capacity, modifiers.
-3. Map : Map terasa mirip dengan array namun dengan index yang memungkinkan untuk berupa tipe data selain integer. Pada map, indeks tersebut diberi nama “key”. Pada std::map digunakan Self-Balancing Tree khususnya Red-Black Tree.
+Tipe data koleksi (Collection Data Type) adalah tipe data yang digunakan untuk mengelompokkan dan menyimpan beberapa nilai atau objek secara bersamaan. Tipe data koleksi memungkinkan Anda menyimpan, mengelola, dan mengakses data dalam jumlah besar dengan cara yang terstruktur. Tipe data koleksi yang umum digunakan dalam pemrograman :
+1. Array, adalah struktur data statis yang menyimpan elemen dengan tipe data yang sama. Elemen-elemen ini dapat diakses  menggunakan indeks. Array memiliki ukuran tetap yang ditentukan selama deklarasi.
+2. Vector, adalah Standard Template Library (STL) jika pada C/C++ berbentuk std::vector. Secara umum vektor mirip dengan array karena mampu menyimpan data sebagai elemen yang alokasi memorinya dilakukan secara otomatis dan terus menerus. Kemampuan Vector tidak hanya terbatas pada jumlah elemen dinamis saja, Vector pada C/C++ juga dilengkapi dengan fitur tambahan sepert element access, iterators, capacity, modifiers.
+3. Map, adalah mirip dengan array, namun dengan index tipe data selain integer. Pada map, indeks diberi nama “key”. Pada std::map digunakan Self-Balancing Tree khususnya Red-Black Tree.
 
 ## Guided 
 
