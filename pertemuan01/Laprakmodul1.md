@@ -172,7 +172,7 @@ int main() {
 }
 ```
 #### Output:
-[240302_00h00m06s_screenshot](SS_Unguided3_RicoAdePratama_2311102138.png)
+[240302_00h00m06s_screenshot](/pertemuan01/SS_Unguided3_RicoAdePratama_2311102138.png)
 
 Kode di atas digunakan untuk mencetak teks "ini adalah file code guided praktikan" ke layar menggunakan function cout untuk mengeksekusi nya.
 
