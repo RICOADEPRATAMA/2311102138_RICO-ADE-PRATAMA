@@ -8,23 +8,21 @@ Tipe adalah format penyimpanan data. Fungsi tipe data adalah mempresentasikan su
 2. Tipe Data Abstrak
 3. Tipe Data Koleksi
 
-# 1. Tipe data Primitif
+### 1. Tipe data Primitif
 Tipe data primitif adalah tipe data yang sudah ditentukan oleh sistem, tipe data primitif ini disediakan oleh banyak bahasa pemrograman, perbedaannya terletak pada jumlah bit yang dialokasikan untuk setiap bit pada tipe data primitif tergantung pada bahasa pemrograman,compiler dan sistem operasinya. Contoh tipe data primitif adalah : 
 1. Int : adalah tipe data yang digunakan untuk menyimpan bilangan bulat seperti 12, 1, 4, dan sebagainya. 
 2. Float : tipe data yang digunakan untuk menyimpan bilangan desimal seperti 1.5, 2.1, 3.14, dan sebagainya. 
 3. Char : berfungsi untuk menyimpan data berupa sebuah huruf. Biasanya digunakan untuk simbol seperti A, B, C dan seterusnya 
 4. Boolean : tipe data ini digunakan untuk menyimpan nilai boolean yang hanya memiliki dua nilai yaitu true dan false.
 
-# 2. Tipe Data Abstrak
+### 2. Tipe Data Abstrak
 Tipe data abstrak atau yang biasa disebut Abstrak Data Tipe(ADT) merupakan tipe data yang dibentuk oleh programer itu sendiri. Pada tipe data abstrak bisa berisi banyak tipe data, jadi nilainya bisa lebih dari satu dan beragam tipe data. Fitur Class adalah fitur Object Oriented Program(OOP) pada bahasa C++ yang mirip dengan fitur data structures Struct pada bahasa C. Keduanya berfungsi untuk membungkus tipe data di dalamnya sebagai anggota. menurut learn.microsoft.com perbedaan antaraPraktikum Struktur Data dan Algoritma 2 Struct dan Class adalah pada akses defaultnya dimana Struct bersifat public dan Class bersifat private.
 
-# 3. Tipe Data Koleksi
+### 3. Tipe Data Koleksi
 Tipe data koleksi (Collection Data Type) adalah tipe data yang digunakan untuk mengelompokkan dan menyimpan beberapa nilai atau objek secara bersamaan. Tipe data koleksi memungkinkan Anda menyimpan, mengelola, dan mengakses sejumlah besar data dengan cara yang terstruktur. Ada beberapa tipe data koleksi yang umum digunakan dalam pemrograman, dan di antaranya adalah:
-1. Array : Array adalah struktur data statis yang menyimpan elemen-elemen dengan
-tipe data yang sama. Elemen-elemen tersebut dapat diakses dengan menggunakan indeks. Array memiliki ukuran tetap yang ditentukan saat deklarasi.
+1. Array : Array adalah struktur data statis yang menyimpan elemen-elemen dengan tipe data yang sama. Elemen-elemen tersebut dapat diakses dengan menggunakan indeks. Array memiliki ukuran tetap yang ditentukan saat deklarasi.
 2. Vector : Vector adalah Standard Template Library (STL) jika di dalam C/C++ memiliki bentuk std::vector . Umumnya, vector mirip seperti array yang memiliki kemampuan untuk menyimpan data dalam bentuk elemen-elemen yang alokasi memorinya dilakukan otomatis dan bersebelahan. Kemampuan vector bukan hanya pada jumlah elemen yang dinamis, vector pada C/C++ juga dilengkapi dengan fitur-fitur pelengkap seperti element access, iterators, capacity, modifiers.
-3. Map : Map terasa mirip dengan array namun dengan index yang memungkinkan
-untuk berupa tipe data selain integer. Pada map, indeks tersebut diberi nama “key”. Pada std::map digunakan Self-Balancing Tree khususnya Red-Black Tree
+3. Map : Map terasa mirip dengan array namun dengan index yang memungkinkan untuk berupa tipe data selain integer. Pada map, indeks tersebut diberi nama “key”. Pada std::map digunakan Self-Balancing Tree khususnya Red-Black Tree.
 
 ## Guided 
 
@@ -125,7 +123,7 @@ int main()
 ```
 Kode di atas digunakan untuk mencetak data mahasiswa dengan menggunakan program struct. Struct merupakan contoh dari tipe data abstrak, Pada kode di atas terdapat sebuah struct 'Mahasiswa' dengan memiliki cabang 'name' (nama), 'address'(alamat), dan 'age' (umur). Ada 2 variabel mendeklarasikan dan menginisialisasi dengan data mahasiswa dengan struct 'mhs1' nama Dian dan 'mhs2' nama Bambang, dan fungsi 'printf' mencetak informasi mahasiswa.
 
-### 3. [Tipe Data Kolektif]
+### 3. [Tipe Data Koleksi]
 
 ```C++
 #include <iostream>
@@ -133,7 +131,7 @@ Kode di atas digunakan untuk mencetak data mahasiswa dengan menggunakan program 
 
 using namespace std;
 
-// Tipe Data Kolektif by Rico Ade Pratama_2311102138
+// Tipe Data Koleksi by Rico Ade Pratama_2311102138
 int main() {
     
     // Deklarasi dan inisialisasi array
@@ -423,33 +421,29 @@ int main() {
 
 Kode di atas digunakan untuk implementasi sederhana untuk menampilkan informasi 'TOP SKOR PEMAIN SEPAK BOLA DUNIA'. Program menggunakan struktur data map untuk menyimpan informasi pemain sepak bola, di mana nomor pemain menjadi kunci (key), dan objek PemainSepakBola menjadi nilai (value). Setelah data pemain sepak bola ditambahkan ke dalam map, program melakukan perulangan menggunakan range-based for loop untuk mencetak informasi setiap pemain, termasuk nomor, nama, dan klubnya.
 
-Perbedaan antara array dan map terletak pada cara penyimpanan dan pengaksesan elemen. Contoh beberapa perbedaan utama :
-1. Penyimpanan Data:
-Array: Menyimpan elemen-elemen berurutan dalam lokasi memori yang kontigu. Elemen diakses berdasarkan indeks numerik.
-Map  : Menyimpan pasangan key-value. Setiap elemen dapat diakses menggunakan key yang unik.
+Perbedaan antara Array dan Map adalah bagaimana elemen disimpan dan diakses. Contoh perbedaan utama: 
+1. Penyimpanan Data: 
+ Array: Menyimpan elemen berurutan di lokasi berurutan. Elemen diakses menggunakan indeks numerik.
+ Map : Menyimpan pasangan nilai key. Setiap elemen dapat diakses melalui key unik.
+2. Indeks atau Key: 
+ Array: Akses elemen menggunakan indeks numerik (biasanya dimulai dari 0).
+ Map : Gunakan key (dari tipe data apa pun) untuk mengakses nilai terkait.
+3. Ukuran: 
+ Array: Ukuran tetap saat deklarasi dan tidak dapat diubah saat runtime.
+ Map : bersifat dinamis dan dapat bertambah atau menyusut saat program sedang berjalan.
+4. Kecepatan Pencarian: 
+ Array: Pencarian menggunakan indeks bisa lebih cepat karena posisi elemen dapat dihitung secara langsung.
+ Map : Pencarian  menggunakan key dan kecepatan pencarian bergantung pada implementasi struktur data.
+5. Fitur dengan key unik: 
+ Array: Semua indeks harus unik, tetapi nilai elemen dapat diulang.
+ Map : Setiap key harus unik dan setiap key memiliki nilai yang ditetapkan padanya.
 
-2. Indeks atau Key:
-Array: Menggunakan indeks numerik (biasanya dimulai dari 0) untuk mengakses elemen.
-Map  : Menggunakan key yang dapat berupa tipe data apa saja untuk mengakses nilai terkait.
-
-3. Ukuran:
-Array: Memiliki ukuran yang tetap saat deklarasi dan tidak dapat diubah selama runtime.
-Map  : Dinamis dan dapat bertambah atau berkurang ukurannya saat program berjalan.
-
-4. Kecepatan Pencarian:
-Array: Pencarian menggunakan indeks dapat lebih cepat karena lokasi elemen dapat dihitung secara langsung.
-Map  : Pencarian menggunakan key, dan kecepatan pencarian bergantung pada implementasi struktur data.
-
-5. Kemampuan Memiliki Key yang Unik:
-Array: Semua indeks harus unik, tetapi nilai elemen dapat berulang.
-Map  : Setiap key harus unik, dan setiap key memiliki nilai yang terkait.
-
-Dalam kasus program di atas, map digunakan untuk menyimpan data pemain sepak bola dengan nomor sebagai key, memungkinkan akses langsung ke informasi pemain berdasarkan nomor tertentu. Hal ini membuat map lebih fleksibel dalam situasi di mana key tidak harus berurutan atau terbatas pada nilai numerik tertentu.
-
+Dalam kasus program di atas, map digunakan untuk menyimpan data pemain sepak bola menggunakan nomor sebagai key atau kuncinya, memungkinkan akses langsung ke informasi pemain berdasarkan nomor tertentu. Hal ini membuat map lebih fleksibel dalam situasi di mana key tidak perlu berurutan atau dibatasi pada nomor atau nilai numerik tertentu.
 
 ## Kesimpulan
 Kesimpulannya, Pemahaman tipe data C++ sangat penting dalam pengembangan perangkat lunak dan membantu programmer dalam mengelola data dengan cara yang sesuai. Penggunaan tipe data primitif, seperti int, float, dan char, memberikan efisiensi dalam penggunaan memori dan operasi matematika dasar. Serta Penggunaan class dan struct dalam C++ tergantung pada kebutuhan dan desain program. Class lebih canggih dengan dukungan enkapsulasi, pewarisan, dan hak akses, sementara struct lebih sederhana dan cocok untuk menyimpan data terstruktur tanpa banyak fungsionalitas tambahan. Selain itu, struktur data seperti array dan map memungkinkan penyimpanan dan akses data yang terorganisir.
 
 ## Referensi
-[1] Meidyan Permata Putri, et al., Algoritma dan Struktur Data. Bandung: Widina Bhakti Persada Bandung, 2022.
-[2] A Zein, & ES Eriana. ALGORITMA DAN STRUKTUR DATA Universitas Pamulang Tangerang Selatan – Banten, 2022.
+[1] Asisten Praktikum. Modul 1 : Tipe Data 1. UNIVERSITAS TELKOM PURWOKERTO, 2024
+[2] Putri Muslina. Dasar-Dasar Pemprograman Komputer. UNIVERSITAS ADZKIA PADANG, 2023.
+[3] A Zein, & ES Eriana. ALGORITMA DAN STRUKTUR DATA Universitas Pamulang Tangerang Selatan – Banten, 2022.

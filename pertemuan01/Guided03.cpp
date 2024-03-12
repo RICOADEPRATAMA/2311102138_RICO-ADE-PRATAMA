@@ -3,9 +3,9 @@
 
 using namespace std;
 
-// Tipe Data Kolektif by Rico Ade Pratama_2311102138
+// Tipe Data Koleksi by Rico Ade Pratama_2311102138
 int main() {
-    
+
     // Deklarasi dan inisialisasi array
     int nilai[5];
     nilai[0] = 23;
