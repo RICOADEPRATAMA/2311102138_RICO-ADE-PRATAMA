@@ -10,10 +10,10 @@ Tipe adalah format penyimpanan data. Fungsi tipe data adalah mempresentasikan su
 
 ### 1. Tipe data Primitif
 Tipe data primitif adalah tipe data yang  ditentukan sistem. Tipe data primitif ini disediakan oleh banyak bahasa pemrograman, perbedaannya terletak pada jumlah bit yang dialokasikan untuk setiap bit dalam tipe data primitif, tergantung pada bahasa pemrograman, compiler, dan sistem operasi. Contoh tipe data primitif adalah: 
-1. Int, adalah untuk Bilangan Bulat
-2. Float, adalah untuk Bilangan Desimal
-3. Char, adalah Huruf.
-4. Boolean, adalah True dan False.
+1. Int, untuk Bilangan Bulat
+2. Float, untuk Bilangan Desimal
+3. Char, untuk Huruf.
+4. Boolean, untuk True dan False.
 
 ### 2. Tipe Data Abstrak
 Tipe data abstrak (Abstract Data Type - ADT) adalah konsep ilmu komputer yang memberikan spesifikasi matematis dari suatu tipe data dan operasi yang dapat dilakukan pada tipe data tersebut tanpa memberikan implementasi konkrit. ADT memisahkan  apa yang perlu dilakukan (spesifikasi) dan bagaimana hal itu perlu dilakukan (implementasi).
