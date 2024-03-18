@@ -159,49 +159,62 @@ Kode di atas digunakan untuk mencari nilai maksimal atau maksimum pada array. Pr
 // 2311102138
 // S1 IF-11-D
 #include <iostream>
-#include <vector>
-
 using namespace std;
 
 int main() {
-    // Inisialisasi array
-    int dataArray_138[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-    vector<int> Rico_138;
-    vector<int> IF11D_138;
+    int ArraySize_138; // Ukuran Array yang dimasukkan oleh pengguna
+    cout << "\n=== PROGRAM MENCARI GANJIL GENAP RICO ADE PRATAMA ===\n";
+    cout << "> Masukkan ukuran Array: ";
+    cin >> ArraySize_138;
 
-    // Memisahkan angka genap dan ganjil
-    for (int i_138 = 0; i_138 < sizeof(dataArray_138) / sizeof(dataArray_138[0]); ++i_138) {
-        if (dataArray_138[i_138] % 2 == 0) {
-            Rico_138.push_back(dataArray_138[i_138]);
+    // Alokasi dinamis array Rico_138 dan If11d_138
+    int *Rico_138 = new int[ArraySize_138]; // Array untuk menyimpan angka genap
+    int *If11d_138 = new int[ArraySize_138]; // Array untuk menyimpan angka ganjil
+    int GenapRico_138 = 0; // Jumlah angka genap
+    int GanjilIf11d_138 = 0; // Jumlah angka ganjil
+
+    // Meminta pengguna memasukkan angka
+    cout << "> Masukkan " << ArraySize_138 << " angka (dipisahkan oleh spasi):\n";
+    for (int i_138 = 0; i_138 < ArraySize_138; ++i_138) {
+        if (!(cin >> Rico_138[i_138])) {
+            cout << "Input tidak mencukupi atau tidak valid." << endl;
+            return 1;
+        }
+        // Memisahkan angka genap dan ganjil
+        if (Rico_138[i_138] % 2 == 0) {
+            GenapRico_138++;
         } else {
-            IF11D_138.push_back(dataArray_138[i_138]);
+            If11d_138[GanjilIf11d_138] = Rico_138[i_138];
+            GanjilIf11d_138++;
         }
     }
 
-    // Menampilkan hasil
-    cout << "Data Array   :";
-    for (int i_138 = 0; i_138 < sizeof(dataArray_138) / sizeof(dataArray_138[0]); ++i_138) {
-        cout << " " << dataArray_138[i_138];
+    cout << "\n=== HASIL PROGRAM ===" << endl;
+
+    // Menampilkan data array yang sudah diinput oleh user
+    cout << "Data Array   : ";
+    for (int i_138 = 0; i_138 < ArraySize_138; ++i_138) // Melakukan perulangan untuk menampilkan data array
+        cout << Rico_138[i_138] << " ";
+    cout << endl;
+
+    // Menampilkan angka genap
+    cout << "Nomor Genap  : ";
+    for (int i_138 = 0; i_138 < ArraySize_138; ++i_138) {
+        if (Rico_138[i_138] % 2 == 0)
+            cout << Rico_138[i_138] << ", ";
     }
     cout << endl;
 
-    cout << "Nomor Genap  :";
-    for (int i_138 = 0; i_138 < Rico_138.size(); ++i_138) {
-        cout << " " << Rico_138[i_138];
-        if (i_138 < Rico_138.size() - 1) {
-            cout << ",";
-        }
+    // Menampilkan angka ganjil
+    cout << "Nomor Ganjil : ";
+    for (int i_138 = 0; i_138 < GanjilIf11d_138; ++i_138) { 
+        cout << If11d_138[i_138] << ", ";
     }
     cout << endl;
 
-    cout << "Nomor Ganjil :";
-    for (int i_138 = 0; i_138 < IF11D_138.size(); ++i_138) {
-        cout << " " << IF11D_138[i_138];
-        if (i_138 < IF11D_138.size() - 1) {
-            cout << ",";
-        }
-    }
-    cout << endl;
+    // Dealokasi memori setelah selesai digunakan
+    delete[] Rico_138;
+    delete[] If11d_138;
 
     return 0;
 }
@@ -210,7 +223,7 @@ int main() {
 #### Output:
 ![SS_Unguided1_Laprak2_2311102138_RicoAdePratama](/Pertemuan02/LAPRAK02/SS_Unguided01_Laprak2_2311102138_RicoAdePratama.png)
 
-Kode diatas digunakan untuk mencari, menentukan dan memisahkan bilangan genap dan ganjil dalam sebuah array. Program ini menggunakan array input, Serta dua vektor, 'Rico_138' dan 'IF11D_138', dibuat untuk menyimpan bilangan genap dan ganjil dari array tersebut. Program melakukan iterasi melalui setiap elemen array 'dataArray_138'. Selama iterasi, jika elemen array tersebut merupakan bilangan genap (habis dibagi dua), maka nilai tersebut dimasukkan ke dalam vektor 'Rico_138'. Jika bukan, maka nilai tersebut dimasukkan ke dalam vektor 'IF11D_138'. Setelah selesai memisahkan bilangan genap dan ganjil, program mencetak nilai-nilai dari array awal, serta nilai-nilai dari kedua vektor yang berisi bilangan genap dan ganjil. Program selesai, lebih jelasnya yang hasil programnya seperti gambar output diatas.
+Kode diatas digunakan untuk mencari, menentukan dan memisahkan bilangan genap dan ganjil dalam sebuah array. Program ini adalah program sederhana yang meminta pengguna untuk menentukan ukuran array dan nomor yang akan dimasukkan ke dalam array. Program ini melakukan alokasi dinamis dari dua buah Array, yaitu 'Rico_138' untuk menyimpan bilangan genap, dan 'If11d_138' untuk menyimpan bilangan ganjil. Selanjutnya program meminta pengguna untuk memasukkan angka sebanyak ukuran array yang  ditentukan. Saat pengguna memasukkan suatu angka, program akan memisahkan angka genap dan ganjil dan menghitung jumlah masing-masing angka tersebut, dan program akan menampilkan data array yang dimasukkan oleh pengguna. Program juga menampilkan bilangan genap dan ganjil yang terdapat dalam array. Terakhir, program menangani memori yang dialokasikan secara dinamis untuk kedua array. Program selesai, lebih jelasnya yang hasil programnya seperti gambar output diatas.
 
 ### 2. [Buatlah program Input array tiga dimensi (seperti pada guided) tetapi jumlah atau ukuran elemennya diinputkan oleh user!]
 
