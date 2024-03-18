@@ -26,6 +26,7 @@ Contoh penggunaan array sebagai berikut :
 
 #### E. Bentuk-Bentuk Array
 1) Array Satu Dimensi 
+
 Array satu dimensi adalah kumpulan elemen identik yang hanya terdiri dari  satu baris atau  kolom  alamat  penyimpanan data (indeks). Elemen ini memiliki tipe data yang sama, namun isi  elemen tersebut dapat berbeda.
 Bentuk umum :
 Tipe_data namaArray[n] = {elemen0, elemen1, elemen2,…..,n};
@@ -37,6 +38,7 @@ contoh pada progam : int ukur[5] = {39, 40. 41, 38, 40};
 jumlah maksimal elemen array.
 
 2) Array Dua Dimensi 
+
 Array dua dimensi sering digambarkan  sebagai  matriks, yang merupakan perpanjangan dari array satu dimensi. Jika larik satu dimensi  terdiri dari tepat satu baris dan kira-kira kolom elemen, maka larik dua dimensi  terdiri  dari  beberapa baris dan  kolom yang terdiri dari elemen bertipe sama. sehingga dapat digambarkan sebagai berikut :
 Bentuk umum :
 Tipe_data namaArray [m][n] = {{a,b,…z},{1,2,…,n-1}};
@@ -45,6 +47,7 @@ contoh : int lulus[4][3];
 Mendeklarasikan array dua dimensi  sama  dengan mendeklarasikan array satu dimensi, hanya saja array dua dimensi berisi dua  elemen dalam tanda kurung siku yang mungkin tidak sama. Elemen dari array dua dimensi diakses dengan menulis kedua indeks elemen dalam tanda kurung ().
 
 3) Array Multidimensi 
+
 Array ini mirip dengan array dua dimensi, namun bisa lebih besar. Dalam praktiknya, array multidimensi tidak terlalu sering  digunakan, namun array ini dapat memainkan peran penting ketika dibutuhkan sejumlah besar dimensi.
 Bentuk umum pendeklarasian array
 multidimensi :
