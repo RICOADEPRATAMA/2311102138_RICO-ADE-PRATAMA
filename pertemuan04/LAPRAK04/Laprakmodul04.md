@@ -540,7 +540,8 @@ Kode di atas digunakan untuk mengimplementasikan program yang menggunakan single
 
 ## Unguided 
 
-### 1. [Buatlah program menu Linked List Non Circular untuk menyimpan Nama dan NIM mahasiswa, dengan menggunakan input dari user ![Soal Unguided1_Laprak4_ke-1](/pertemuan04/LAPRAK04/Soal%20Unguided1_Laprak4_ke-1.png)![Soal Unguided1_Laprak4_ke-2](/pertemuan04/LAPRAK04/Soal%20Unguided1_Laprak4_ke-2.png)![Soal Unguided1_Laprak4_ke-3](/pertemuan04/LAPRAK04/Soal%20Unguided1_Laprak4_ke-3.png)![Soal Unguided1_Laprak4_ke-4](/pertemuan04/LAPRAK04/Soal%20Unguided1_Laprak4_ke-4.png)![Soal Unguided1_Laprak4_ke-5](/pertemuan04/LAPRAK04/Soal%20Unguided1_Laprak4_ke-5.png)]
+### 1. [Buatlah program menu Linked List Non Circular untuk menyimpan Nama dan NIM mahasiswa, dengan menggunakan input dari user.
+![Soal Unguided1_Laprak4_ke-1](/pertemuan04/LAPRAK04/Soal%20Unguided1_Laprak4_ke-1.png)![Soal Unguided1_Laprak4_ke-2](/pertemuan04/LAPRAK04/Soal%20Unguided1_Laprak4_ke-2.png)![Soal Unguided1_Laprak4_ke-3](/pertemuan04/LAPRAK04/Soal%20Unguided1_Laprak4_ke-3.png)![Soal Unguided1_Laprak4_ke-4](/pertemuan04/LAPRAK04/Soal%20Unguided1_Laprak4_ke-4.png)![Soal Unguided1_Laprak4_ke-5](/pertemuan04/LAPRAK04/Soal%20Unguided1_Laprak4_ke-5.png)]
 
 ```C++
 // LAPRAK 4 : UNGUIDED 
