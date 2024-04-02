@@ -8,14 +8,14 @@
 Linked List adalah kumpulan elemen yang terhubung melalui pointer. Setiap elemen memiliki pointer yang menyimpan alamat memori, bisa berupa data atau pointer lain. Elemen pertama disebut head, dan jika kosong, head menunjuk ke NULL. Elemen terakhir disebut tail dengan pointer yang menunjuk ke NULL. Linked list memungkinkan penyimpanan data dengan alokasi memori dinamis, dan mudah dalam penambahan serta penghapusan elemen, namun ia memiliki kelemahan dalam akses acak yang lambat dan kebutuhan ruang ekstra untuk pointer. Linked list sering digunakan untuk data yang sering mengalami perubahan dan membutuhkan fleksibilitas dalam operasi penambahan atau penghapusan. Selain itu, linked list juga sering digunakan dalam implementasi struktur data lain seperti stack, queue, dan graph.
 
 Terdapat beberapa jenis linked list, yaitu:
-# Single Linked List
+### Single Linked List
 1. Single linked list Non Circular
 Single linked list Non Circular adalah jenis struktur data linked list yang terdiri dari sejumlah node yang setiap node hanya memiliki satu pointer, yaitu pointer yang digunakan untuk menunjuk ke node selanjutnya dalam urutan linked list, kecuali untuk node terakhir yang disebut sebagai tail. Pada node tail atau node terakhir ini, pointer yang dimilikinya menunjuk ke NULL, menandakan akhir dari linked list tersebut.
 
 2. Single Linked List Circular
 Single Linked List Circular adalah suatu jenis linked list di mana setiap node memiliki sebuah field pointer yang menunjuk ke node berikutnya dalam urutan, tetapi dengan satu keistimewaan. Keistimewaan tersebut adalah pointer next dari node terakhir akan kembali menunjuk ke node pertama atau head, sehingga membentuk suatu lingkaran atau sirkuit. Dengan kata lain, dalam Single Linked List Circular, node tail atau node terakhir akan selalu menunjuk kembali ke node head atau node pertama, menghasilkan suatu struktur data yang berputar atau bersirkulasi.
 
-# Double Linked List
+### Double Linked List
 1. Double Linked List Non Circular
 Double Linked List Non Circular, saat berada pada node yang berfungsi sebagai head atau node pertama dalam linked list, nilai dari pointer prev pada node tersebut akan diatur menjadi NULL. Hal ini dikarenakan node head tidak memiliki node sebelumnya. Sedangkan untuk node yang berfungsi sebagai tail atau node terakhir dalam linked list, nilai dari pointer next pada node tersebut akan diatur untuk menunjuk ke NULL, menandakan akhir dari linked list tersebut.
 
@@ -540,7 +540,7 @@ Kode di atas digunakan untuk mengimplementasikan program yang menggunakan single
 
 ## Unguided 
 
-### 1. [Buatlah program menu Linked List Non Circular untuk menyimpan Nama dan NIM mahasiswa, dengan menggunakan input dari user.![Soal Unguided1_Laprak4_ke-1](/pertemuan04/LAPRAK04/Soal%20Unguided1_Laprak4_ke-1.png)![Soal Unguided1_Laprak4_ke-2](/pertemuan04/LAPRAK04/Soal%20Unguided1_Laprak4_ke-2.png)![Soal Unguided1_Laprak4_ke-3](/pertemuan04/LAPRAK04/Soal%20Unguided1_Laprak4_ke-3.png)![Soal Unguided1_Laprak4_ke-4](/pertemuan04/LAPRAK04/Soal%20Unguided1_Laprak4_ke-4.png)![Soal Unguided1_Laprak4_ke-5](/pertemuan04/LAPRAK04/Soal%20Unguided1_Laprak4_ke-5.png)]
+### 1. [Buatlah program menu Linked List Non Circular untuk menyimpan Nama dan NIM mahasiswa, dengan menggunakan input dari user ![Soal Unguided1_Laprak4_ke-1](/pertemuan04/LAPRAK04/Soal%20Unguided1_Laprak4_ke-1.png)![Soal Unguided1_Laprak4_ke-2](/pertemuan04/LAPRAK04/Soal%20Unguided1_Laprak4_ke-2.png)![Soal Unguided1_Laprak4_ke-3](/pertemuan04/LAPRAK04/Soal%20Unguided1_Laprak4_ke-3.png)![Soal Unguided1_Laprak4_ke-4](/pertemuan04/LAPRAK04/Soal%20Unguided1_Laprak4_ke-4.png)![Soal Unguided1_Laprak4_ke-5](/pertemuan04/LAPRAK04/Soal%20Unguided1_Laprak4_ke-5.png)]
 
 ```C++
 // LAPRAK 4 : UNGUIDED 
@@ -1048,7 +1048,7 @@ int main()
 ![SS_Unguided3_Laprak4_ke-10.png](/pertemuan04/LAPRAK04/SS_Unguided3_Laprak4_ke-10.png)
 
 
-Kode di atas digunakan untuk implementasi Linked List Non-Circular untuk membuat program menu, dengan menyimpan Nama dan NIM mahasiswa. Program ini menggunakan struct Node yang memiliki data Nama dan NIM, serta pointer ke node selanjutnya dalam linked list. Program ini menggunakan beberapa fungsi untuk menyimpan, mengubah, dan menghapus data dalam linked list. Berikut adalah deskripsi fungsi yang tersedia:
+Kode di atas digunakan untuk implementasi Linked List Non-Circular untuk membuat program menu, dengan menyimpan Nama dan NIM mahasiswa. Program ini menggunakan struct Node yang memiliki data Nama dan NIM, serta pointer ke node selanjutnya dalam linked list dengan sangat kompleks. Program ini memiliki beberapa fungsi untuk menyimpan, mengubah, dan menghapus data dalam linked list. Berikut fungsi yang tersedia adalah:
 
 init_138(): Fungsi untuk memulihkan linked list ke keadaan awal, dengan mengatur pointer ke node awal dan node terakhir ke NULL.
 isEmpty_138(): Fungsi untuk mengecek apakah linked list kosong atau tidak.
