@@ -1014,9 +1014,13 @@ int main()
 ![SS_Unguided1_Laprak4_ke-1.png](/pertemuan04/LAPRAK04/SS_Unguided1_Laprak4_ke-1.png)
 ![SS_Unguided1_Laprak4_ke-2.png](/pertemuan04/LAPRAK04/SS_Unguided1_Laprak4_ke-2.png)
 ![SS_Unguided1_Laprak4_ke-3.png](/pertemuan04/LAPRAK04/SS_Unguided1_Laprak4_ke-3.png)
+![SS_Unguided1_Laprak4_ke-4.png](/pertemuan04/LAPRAK04/SS_Unguided1_Laprak4_ke-4.png)
+![SS_Unguided1_Laprak4_ke-5.png](/pertemuan04/LAPRAK04/SS_Unguided1_Laprak4_ke-5.png)
+![SS_Unguided1_Laprak4_ke-6.png](/pertemuan04/LAPRAK04/SS_Unguided1_Laprak4_ke-6.png)
 
 
-### 2. [Setelah membuat menu tersebut, masukkan data sesuai urutan berikut, lalu tampilkan data yang telah dimasukkan. (Gunakan insert depan, belakang atau tengah)![Soal Unguided2_Laprak4](/pertemuan04/LAPRAK04/Soal%20Unguided2_Laprak4.png)]
+### 2. [Setelah membuat menu tersebut, masukkan data sesuai urutan berikut, lalu tampilkan data yang telah dimasukkan. (Gunakan insert depan, belakang atau tengah)
+![Soal Unguided2_Laprak4](/pertemuan04/LAPRAK04/Soal%20Unguided2_Laprak4.png)]
 
 
 #### Output:
@@ -1033,7 +1037,8 @@ int main()
 ![SS_Unguided2_Laprak4_ke-11.png](/pertemuan04/LAPRAK04/SS_Unguided2_Laprak4_ke-11.png)
 
 
-### 3. [Lakukan perintah berikut: ![Soal Unguided3_Laprak4](/pertemuan04/LAPRAK04/Soal%20Unguided3_Laprak4.png)]
+### 3. [Lakukan perintah berikut: 
+![Soal Unguided3_Laprak4](/pertemuan04/LAPRAK04/Soal%20Unguided3_Laprak4.png)]
 
 
 #### Output:
