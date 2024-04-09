@@ -39,12 +39,12 @@ Berikut adalah operasi yang dapat dilakukan pada hash table:
 4. Update: Update atau Memperbarui adalah operasi untuk mengubah data pada hash table. Ini dapat dilakukan dengan menggunakan indeks yang dihasilkan oleh fungsi hash untuk menentukan lokasi data yang akan diupdate.
 
 ## G. KELEBIHAN  DAN KEKURANGAN HASH TABLE
-### 1. kELEBIHAN HASH TABLE
+#### 1. KELEBIHAN HASH TABLE
 - Waktu akses yang lebih cepat, jika record yang dicari langsung berada pada angka hash lokasi penyimpanannya.
 - Hashing yang relative lebih cepat.
 - Cocok untuk merepresentasikan data dengan frekuensi insert, delete dan search yang tinggi.
 - Hash table juga memiliki beberapa cara pencarian alamat lain tersebut, yaitu linear probing, quadratic probing, dan double hashing.
-### 2. KEKURANGAN HASH TABLE
+#### 2. KEKURANGAN HASH TABLE
 Kekurangan dari hash table adalah adanya kemungkinan terjadi collision (tabrakan). Collision adalah saat dimana ada dua angka yang dimasukan dalam fungsi hash yang menhasilkan nilai hasil yang sama. Contoh: Hash(24) = 24 %5 = 4 dan Hash(19) = 19%5 = 4. Untuk mengatasi collision ini, dapat digunakan closed hashing (open addressing) dan open hashing (closed hashing digunakan untuk menyelesaikan collision dengan cara mencari alamat lain apabila alamat yang dituju sudah terisi)
 
 ## H. CONTOH ILLUSTRASI HASH TABLE
