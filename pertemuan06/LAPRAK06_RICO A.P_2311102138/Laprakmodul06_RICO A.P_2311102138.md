@@ -27,8 +27,8 @@ Operasi yang umum digunakan pada stack :
 - Search (Cari): Mencari keberadaan elemen tertentu dalam tumpukan. 
 
 ## E. CONTOH ILLUSTRASI STACK
-![CONTOH ILLUSTRASI STACK1](/pertemuan06/LAPRAK06_RICO%20A.P_2311102138/Contoh_Ilustrasi_Stack1.jpg)
-![CONTOH ILLUSTRASI STACK2](/pertemuan06/LAPRAK06_RICO%20A.P_2311102138/Contoh_Ilustrasi_Stack2.png)
+![CONTOH ILLUSTRASI STACK1](/pertemuan06/LAPRAK06_RICO%20A.P_2311102138/Foto%20Output/Contoh_Ilustrasi_Stack1.jpg)
+![CONTOH ILLUSTRASI STACK2](/pertemuan06/LAPRAK06_RICO%20A.P_2311102138/Foto%20Output/Contoh_Ilustrasi_Stack2.png)
 
 
 ## Guided 
@@ -183,14 +183,16 @@ Ada beberapa fungsi utilitas yang digunakan dalam program tersebut, antara lain:
 - 'changeArrayBuku(int posisi, string data)' untuk mengubah data pada posisi tertentu di dalam stack.
 - 'destroyArraybuku()' untuk menghapus semua data dari stack.
 - 'cetakArrayBuku()' untuk mencetak semua data dalam stack.
-Hasil dari output program diatas seperti :
-![Output_Guided1_Laprak6.png](/pertemuan06/LAPRAK06_RICO%20A.P_2311102138/Output_Guided1_Laprak6.png)
+
+#### Hasil dari output program diatas seperti :
+![Output_Guided1_Laprak6.png](/pertemuan06/LAPRAK06_RICO%20A.P_2311102138/Foto%20Output/Output_Guided1_Laprak6.png)
 
 
 ## Unguided 
 
 ### 1. [Buatlah program untuk menentukan apakah kalimat tersebut yang diinputkan dalam program stack adalah palindrom/tidak. Palindrom kalimat yang dibaca dari depan dan belakang sama. Jelaskan bagaimana cara kerja programnya.]
-![Soal_Unguided1_Laprak6.png](/pertemuan06/LAPRAK06_RICO%20A.P_2311102138/Soal_Unguided1_Laprak6.png)
+![Soal_Unguided1_Laprak6.png](/pertemuan06/LAPRAK06_RICO%20A.P_2311102138/Foto%20Output/Soal_Unguided1_Laprak6.png)
+
 
 ```C++
 // LAPRAK 6 : UNGUIDED 1
@@ -274,7 +276,7 @@ int main() {
 
 ```
 #### Output:
-![SS_Unguided1_Laprak6_2311102138_RicoAdePratama.png](/pertemuan06/LAPRAK06_RICO%20A.P_2311102138/SS_Unguided1_Laprak6_2311102138_RicoAdePratama.png)
+![SS_Unguided1_Laprak6_2311102138_RicoAdePratama.png](/pertemuan06/LAPRAK06_RICO%20A.P_2311102138/Foto%20Output/SS_Unguided1_Laprak6_2311102138_RicoAdePratama.png)
 
 
 Kode di atas digunakan untuk implementasi dari struktur data stack untuk menentukan apakah sebuah kalimat adalah palindrom atau tidak dalam bahasa pemrograman C++. Palindrom adalah kata atau kalimat yang memiliki sifat bahwa jika dibalik, maka huruf-huruf dan kata-katanya tetap sama. Library yang digunakan Program menggunakan library standar C++, yaitu '<iostream>' untuk input/output, '<string>' untuk manipulasi string, dan <stack> untuk menggunakan struktur data stack.
@@ -288,7 +290,7 @@ Program ini memiliki dua fungsi utama yang digunakan, antara lain :
 
 
 ### 2. [Buatlah program untuk melakukan pembalikan terhadap kalimat menggunakan stack dengan minimal 3 kata. Jelaskan output program dan source codenya beserta operasi/fungsi yang dibuat?]
-![Soal_Unguided2_Laprak6.png](/pertemuan06/LAPRAK06_RICO%20A.P_2311102138/Soal_Unguided2_Laprak6.png)
+![Soal_Unguided2_Laprak6.png](/pertemuan06/LAPRAK06_RICO%20A.P_2311102138/Foto%20Output/Soal_Unguided2_Laprak6.png)
 
 ```C++
 // LAPRAK 6 : UNGUIDED 2
@@ -340,7 +342,7 @@ int main() {
 
 ```
 #### Output:
-![SS_Unguided2_Laprak6_2311102138_RicoAdePratama.png](/pertemuan06/LAPRAK06_RICO%20A.P_2311102138/SS_Unguided2_Laprak6_2311102138_RicoAdePratama.png)
+![SS_Unguided2_Laprak6_2311102138_RicoAdePratama.png](/pertemuan06/LAPRAK06_RICO%20A.P_2311102138/Foto%20Output/SS_Unguided2_Laprak6_2311102138_RicoAdePratama.png)
 
 Kode di atas digunakan untuk implementasi dari struktur data stack yang digunakan untuk melakukan pembalikan terhadap sebuah kalimat. Pembalikan kalimat berarti mengubah urutan huruf-huruf dalam kalimat sehingga kalimat tersebut menjadi kalimat yang berbeda. Program ini menggunakan struktur data stack untuk memudahkan proses pembalikan. Library yang digunakan Program menggunakan library standar C++, yaitu '<iostream>' untuk input/output, '<string>' untuk manipulasi string, dan <stack> untuk menggunakan struktur data stack.
 
