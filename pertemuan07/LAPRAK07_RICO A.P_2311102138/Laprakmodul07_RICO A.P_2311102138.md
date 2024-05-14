@@ -12,7 +12,7 @@ Perbedaan mendasar antara queue dan struktur data lainnya seperti stack terletak
 ## C. JENIS-JENIS PADA OPERASI QUEUE
 Operasi pada Queue melibatkan serangkaian fungsi yang memberikan kita kemampuan untuk berinteraksi dengan struktur data ini. Mari kita jabarkan beberapa operasi dasar yang dapat kita lakukan pada Queue:
 
-1. Berdasarkan Implementasinya
+### 1. Berdasarkan Implementasinya
 
 #### Linear/Simple Queue: Elemen-elemen data disusun dalam barisan linear dan penambahan serta penghapusan elemen hanya terjadi pada dua ujung barisan. Contoh Linear Queue:
 
@@ -65,7 +65,7 @@ Operasi pada Queue melibatkan serangkaian fungsi yang memberikan kita kemampuan 
 - Elemen pertama: 3 (dihapus)
 - Elemen yang tersisa: 4, 5, 6, 7, 8, 9, 10, 11, 12, 13
 
-2. Berdasarkan Penggunaan
+### 2. Berdasarkan Penggunaan
 
 #### Priority Queue: Setiap elemen memiliki prioritas tertentu. Elemen dengan prioritas tertinggi akan diambil terlebih dahulu.Elemen dengan prioritas rendah akan dihapus setelah elemen dengan prioritas tinggi. Contoh Priority Queue:
 
@@ -228,7 +228,8 @@ Kode di atas digunakan untuk mengimplementasikan program sederhana dari struktur
 - countQueue(): Menghitung jumlah elemen dalam antrian.
 - clearQueue(): Menghapus semua elemen dari antrian.
 - viewQueue(): Menampilkan elemen-elemen dalam antrian.
-Fungsi-fungsi ini digunakan dalam fungsi main() untuk melakukan operasi-operasi pada antrian, seperti menambahkan elemen, menampilkan antrian, menghitung jumlah elemen, menghapus elemen, dan menghapus semua elemen dari antrian.
+
+  Fungsi-fungsi ini digunakan dalam fungsi main() untuk melakukan operasi-operasi pada antrian, seperti menambahkan elemen, menampilkan antrian, menghitung jumlah elemen, menghapus elemen, dan menghapus semua elemen dari antrian.
 
 #### Hasil dari output program diatas seperti :
 ![Output_Guided1_Laprak7.png](/pertemuan07/LAPRAK07_RICO%20A.P_2311102138/Foto%20Output/Output_Guided1_Laprak7.png)
@@ -374,13 +375,14 @@ int main() {
 
 Kode di atas digunakan untuk implementasi struktur data Queue atau antrian dengan menggunakan linked list di C++. Antrian diimplementasikan sebagai kelas yang disebut 'Queue', yang memiliki penunjuk depan dan penunjuk belakang untuk melacak elemen depan dan belakang antrian. Antrian dapat menyimpan string sebagai elemennya.
 Kelas Queue memiliki beberapa metode untuk memanipulasi antrian:
-- 'enqueue_138(const string& data_138)': menambahkan elemen ke bagian belakang antrian
-- 'dequeue_138()': menghapus elemen dari depan antrian
-- 'displayQueue_138()': menampilkan semua elemen dalam antrian
-- 'isEmpty_138()': memeriksa apakah antrian kosong
-- 'countQueue_138()': mengembalikan jumlah elemen dalam antrian
-- 'clearQueue_138()': menghapus semua elemen dari antrian
-Fungsi ini 'main' mendemonstrasikan cara menggunakan 'Queue' kelas dengan membuat objek antrian, menambah dan menghapus elemen dari antrian, dan menampilkan antrian di berbagai tahapan. Program ini juga menggunakan metode 'isEmpty_138()', 'countQueue_138()', dan 'clearQueue_138()' untuk menunjukkan status antrian saat ini.
+- 'enqueue_138(const string& data_138)': menambahkan elemen ke bagian belakang antrian.
+- 'dequeue_138()': menghapus elemen dari depan antrian.
+- 'displayQueue_138()': menampilkan semua elemen dalam antrian.
+- 'isEmpty_138()': memeriksa apakah antrian kosong.
+- 'countQueue_138()': mengembalikan jumlah elemen dalam antrian.
+- 'clearQueue_138()': menghapus semua elemen dari antrian.
+
+  Fungsi ini 'main' mendemonstrasikan cara menggunakan 'Queue' kelas dengan membuat objek antrian, menambah dan menghapus elemen dari antrian, dan menampilkan antrian di berbagai tahapan. Program ini juga menggunakan metode 'isEmpty_138()', 'countQueue_138()', dan 'clearQueue_138()' untuk menunjukkan status antrian saat ini.
 
   Program ini dalam penggunaannya menggunakan output dari code otomatis. Lebih jelasnya yang hasil programnya seperti gambar output diatas.
 
@@ -532,9 +534,10 @@ Kelas 'Queue' memiliki beberapa metode untuk memanipulasi antrian:
 - 'isEmpty_138': memeriksa apakah antrian kosong dan mengembalikan nilai boolean yang menunjukkan hasilnya.
 - 'countQueue_138': mengembalikan jumlah siswa yang sedang dalam antrian.
 - 'clearQueue_138': mengeluarkan semua siswa dari antrian dan mencetak pesan yang menunjukkan bahwa antrian telah dihapus.
-Fungsi ini 'main' mendemonstrasikan cara menggunakan 'Queue' kelas dengan membuat objek antrian, menambahkan beberapa siswa ke antrian, menampilkan antrian, dan mengeluarkan siswa dari antrian. Program ini juga menggunakan metode 'isEmpty_138', 'countQueue_138', dan 'clearQueue_138' untuk menunjukkan status antrian saat ini.
 
- Program ini dalam penggunaannya menggunakan output dari code otomatis. Lebih jelasnya yang hasil programnya seperti gambar output diatas.
+  Fungsi ini 'main' mendemonstrasikan cara menggunakan 'Queue' kelas dengan membuat objek antrian, menambahkan beberapa siswa ke antrian, menampilkan antrian, dan mengeluarkan siswa dari antrian. Program ini juga menggunakan metode 'isEmpty_138', 'countQueue_138', dan 'clearQueue_138' untuk menunjukkan status antrian saat ini.
+
+  Program ini dalam penggunaannya menggunakan output dari code otomatis. Lebih jelasnya yang hasil programnya seperti gambar output diatas.
 
 
 ## Kesimpulan
