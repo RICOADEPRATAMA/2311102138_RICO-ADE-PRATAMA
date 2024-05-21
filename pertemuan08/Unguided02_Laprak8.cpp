@@ -3,7 +3,7 @@
 // 2311102138
 // S1 IF-11-D
 
-// Program menghitung banyaknya huruf vocal dalam sebuah kalimat
+// Program menghitung banyaknya huruf vocal dalam sebuah kalimat menggunakan Sequential Search
 #include <iostream>
 #include <cctype> // Untuk fungsi tolower
 
