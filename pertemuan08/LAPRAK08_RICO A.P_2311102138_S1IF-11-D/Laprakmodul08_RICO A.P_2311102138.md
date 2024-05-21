@@ -360,19 +360,19 @@ Kode di atas digunakan untuk implementasi struktur data pencarian biner di C++ y
 
 - Deklarasi dan Inisialisasi Variabel :
   - `PanjangSentence_138`: Menyimpan panjang kalimat yang dimasukkan oleh pengguna.
-  - `charArray`: Array untuk menyimpan karakter-karakter non-spasi dari kalimat.
+  - `KarakterArray_138`: Array untuk menyimpan karakter-karakter non-spasi dari kalimat.
   - `Indeks_138`: Array untuk menyimpan indeks asli dari karakter-karakter non-spasi.
-  - `Size_138`: Variabel yang melacak jumlah karakter non-spasi yang dimasukkan ke dalam `charArray` dan `Indeks_138`.
+  - `Size_138`: Variabel yang melacak jumlah karakter non-spasi yang dimasukkan ke dalam `KarakterArray_138` dan `Indeks_138`.
   - `sentence_138`: variabel string untuk menyimpan kalimat yang dimasukkan oleh pengguna
   - `i_138`, `j_138`, `Kiri_138`, `Kanan_138`, `Tengah_138`, `IndeksTengah_138`: variabel integer untuk perulangan dan pencarian
 
-- Loop untuk Mengisi `charArray` dan `Indeks_138`:
+- Loop untuk Mengisi `KarakterArray_138` dan `Indeks_138`:
   - Loop ini iterasi melalui setiap karakter dalam `sentence_138`.
-  - Karakter non-spasi ditambahkan ke `charArray`, dan indeks asli karakter tersebut disimpan di `Indeks_138`.
+  - Karakter non-spasi ditambahkan ke `KarakterArray_138`, dan indeks asli karakter tersebut disimpan di `Indeks_138`.
 
 - Sort dan Search:
-  - Setelah array `charArray` dan `Indeks_138` diisi, `charArray` diurutkan menggunakan fungsi `selectionSort_138`.
-  - Setelah array diurutkan, `binarySearch_138` digunakan untuk mencari `Target_138` dalam `charArray`.
+  - Setelah array `KarakterArray_138` dan `Indeks_138` diisi, `KarakterArray_138` diurutkan menggunakan fungsi `selectionSort_138`.
+  - Setelah array diurutkan, `binarySearch_138` digunakan untuk mencari `Target_138` dalam `KarakterArray_138`.
 
 - Hasil Pencarian :
   - Jika `Target_138` ditemukan, indeks asli karakter tersebut ditampilkan.
