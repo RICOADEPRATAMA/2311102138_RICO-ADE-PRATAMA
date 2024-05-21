@@ -60,13 +60,13 @@ int main() {
 
     // Membuat array untuk menyimpan karakter
     int PanjangSentence_138 = sentence_138.size(); // Menghitung panjang kalimat
-    char charArray[100]; // Array untuk menyimpan karakter-karakter dari kalimat (mengabaikan spasi)
+    char KarakterArray_138 [100]; // Array untuk menyimpan karakter-karakter dari kalimat (mengabaikan spasi)
     int Size_138 = 0; // Variabel untuk melacak jumlah karakter non-spasi
 
-    // Mengisi charArray dengan karakter-karakter dari kalimat
+    // Mengisi KarakterArray_138  dengan karakter-karakter dari kalimat
     for (int i_138 = 0; i_138 < PanjangSentence_138; ++i_138) {
         if (sentence_138[i_138] != ' ') {  // Mengabaikan spasi
-            charArray[Size_138] = sentence_138[i_138]; // Menyimpan karakter ke charArray
+            KarakterArray_138 [Size_138] = sentence_138[i_138]; // Menyimpan karakter ke KarakterArray_138 
             ++Size_138; // Menambah ukuran dari array yang telah diisi
         }
     }
@@ -75,16 +75,16 @@ int main() {
     cin >> Target_138;
 
     // Mengurutkan array karakter menggunakan selection sort
-    selectionSort_138(charArray, Size_138);
+    selectionSort_138(KarakterArray_138 , Size_138);
 
     // Menampilkan daftar huruf yang sudah diurutkan sesuai abjad
     cout << "== Daftar huruf yang sudah diurutkan sesuai abjad : ";
     for (int i_138 = 0; i_138 < Size_138; ++i_138) {
-        cout << charArray[i_138] << " ";
+        cout << KarakterArray_138 [i_138] << " ";
     }
 
     // Mencari huruf dalam array yang telah diurutkan
-    int Index_138 = binarySearch_138(charArray, Size_138, Target_138);
+    int Index_138 = binarySearch_138(KarakterArray_138 , Size_138, Target_138);
 
     cout << endl;
 

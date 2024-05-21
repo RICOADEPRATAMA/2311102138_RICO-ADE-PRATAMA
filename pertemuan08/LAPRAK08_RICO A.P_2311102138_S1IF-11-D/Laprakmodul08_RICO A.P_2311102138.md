@@ -155,7 +155,7 @@ Kode di atas digunakan untuk mengimplementasikan program sederhana dari struktur
   Contoh programnya array yang berisi 10 elemen : {9, 4, 1, 7, 5, 12, 4, 13, 4, 10} dan nilai yang ingin dicari dalam array, yaitu angka 10. Jadi angka 10 ditemukan pada indeks ke-9. Lebih jelasnya yang hasil programnya seperti gambar output diatas.
 
 #### Hasil dari output program diatas seperti :
-![Output_Guided1_Laprak7.png](/pertemuan07/LAPRAK07_RICO%20A.P_2311102138/Foto%20Output/Output_Guided1_Laprak7.png)
+![SS_Guided1_Laprak8_2311102138_RicoAdePratama_S1IF-11-D.png](/pertemuan08/LAPRAK08_RICO%20A.P_2311102138_S1IF-11-D/Foto%20Output/SS_Guided1_Laprak8_2311102138_RicoAdePratama_S1IF-11-D.png)
 
 
 ### 2. [Buatlah sebuah project untuk melakukan pencarian data dengan menggunakan Binary Search.]
@@ -231,20 +231,18 @@ int main(){
 }
 ```
 
-Kode di atas digunakan untuk mengimplementasikan program sederhana dari struktur data algoritma Sequential Search dalam bahasa C++. Sequential Search digunakan untuk mencari suatu nilai dalam sebuah array dengan memeriksa setiap elemen array satu per satu hingga nilai yang dicari ditemukan atau seluruh elemen telah diperiksa. Berikut adalah penjelasan langkah-langkah dalam program:
+Kode di atas digunakan untuk mengimplementasikan dari algoritma Binary Search untuk mencari sebuah nilai dalam array yang telah diurutkan menggunakan algoritma Selection Sort. Berikut rincian programnya :
 
-- n : ukuran dari array, yaitu 10.
-- data : array yang berisi 10 elemen : {9, 4, 1, 7, 5, 12, 4, 13, 4, 10}.
-- cari : nilai yang ingin dicari dalam array, yaitu 10.
-- ketemu : variabel boolean yang digunakan untuk menandakan apakah nilai yang dicari ditemukan atau tidak, diinisialisasi dengan false.
-- i : variabel untuk iterasi. Program menggunakan loop for untuk memeriksa setiap elemen dalam array data. Jika elemen pada indeks i sama dengan nilai cari, maka ketemu diubah menjadi true dan loop dihentikan menggunakan break. Setelah itu Program akan mencetak pesan "Program Sequential Search" dan isi array.
-- Jika nilai cari ditemukan (ketemu bernilai true), program mencetak indeks di mana nilai tersebut ditemukan.
-- Jika nilai cari tidak ditemukan, program mencetak pesan bahwa data tidak ditemukan
+- 'dataArray[7] = {1, 8, 2, 5, 4, 9, 7}' : Array berisi data yang akan diurutkan dan dicari.
+- 'cari' : Variabel untuk menyimpan data yang akan dicari oleh pengguna.
+- Fungsi 'Selection_Sort' : Untuk mengurutkan 'dataArray' menggunakan algoritma Selection Sort. Fungsi ini melakukan iterasi melalui array, menemukan elemen terkecil di bagian array yang tidak disortir, dan menukarnya dengan elemen pertama yang tidak disortir. Proses ini diulangi hingga seluruh array diurutkan.
+- Fungsi 'BinarySearch' mencari nilai cari dalam 'dataArray' menggunakan algoritma Binary Search. Jika nilainya ditemukan, ia akan mencetak indeks nilai dalam array. Jika nilainya tidak ditemukan, ia akan mencetak pesan yang menunjukkan bahwa nilainya tidak ditemukan.
 
-  Contoh programnya array yang berisi 10 elemen : {9, 4, 1, 7, 5, 12, 4, 13, 4, 10} dan nilai yang ingin dicari dalam array, yaitu angka 10. Jadi angka 10 ditemukan pada indeks ke-9. Lebih jelasnya yang hasil programnya seperti gambar output diatas.
+  Program ini memanfaatkan dua algoritma yang berbeda, Selection Sort untuk mengurutkan data dan Binary Search untuk mencari data.
+  Contoh programnya array yang berisi 7 elemen : = {1, 8, 2, 5, 4, 9, 7} dan nilai yang ingin dicari dalam array, yaitu angka 7. Kemudian angka diurutkan data nilainya, yaitu menjadi 1, 2, 4, 5, 7, 8, 9. Jadi, angka 7 ditemukan pada indeks ke-4. Lebih jelasnya yang hasil programnya seperti gambar output diatas.
 
 #### Hasil dari output program diatas seperti :
-![Output_Guided1_Laprak7.png](/pertemuan07/LAPRAK07_RICO%20A.P_2311102138/Foto%20Output/Output_Guided1_Laprak7.png)
+![SS_Guided2_Laprak8_2311102138_RicoAdePratama_S1IF-11-D.png](/pertemuan08/LAPRAK08_RICO%20A.P_2311102138_S1IF-11-D/Foto%20Output/SS_Guided2_Laprak8_2311102138_RicoAdePratama_S1IF-11-D.png)
 
 
 ## Unguided 
@@ -264,7 +262,7 @@ Kode di atas digunakan untuk mengimplementasikan program sederhana dari struktur
 using namespace std;
 
 // Fungsi untuk melakukan pencarian binary pada array karakter
-int binarySearch_138(char Array_138[], int Indeks_138[], int Size_138, char Target_138) {
+int binarySearch_138(char Array_138[], int Size_138, char Target_138) {
     int Kiri_138 = 0;
     int Kanan_138 = Size_138 - 1;
 
@@ -274,7 +272,7 @@ int binarySearch_138(char Array_138[], int Indeks_138[], int Size_138, char Targ
 
         // Jika huruf Target_138 berada di tengah array
         if (Array_138[Tengah_138] == Target_138)
-            return Indeks_138[Tengah_138];
+            return Tengah_138;
 
         // Jika huruf Target_138 berada di sebelah kiri tengah array
         if (Array_138[Tengah_138] > Target_138)
@@ -290,7 +288,7 @@ int binarySearch_138(char Array_138[], int Indeks_138[], int Size_138, char Targ
 }
 
 // Fungsi untuk melakukan selection sort pada array karakter
-void selectionSort_138(char Array_138[], int Indeks_138[], int Size_138) {
+void selectionSort_138(char Array_138[], int Size_138) {
     for (int i_138 = 0; i_138 < Size_138 - 1; ++i_138) {
         int IndeksTengah_138 = i_138;
         for (int j_138 = i_138 + 1; j_138 < Size_138; ++j_138) {
@@ -301,7 +299,6 @@ void selectionSort_138(char Array_138[], int Indeks_138[], int Size_138) {
         }
         // Menukar elemen terkecil yang ditemukan dengan elemen pertama yang belum diurutkan
         swap(Array_138[i_138], Array_138[IndeksTengah_138]);
-        swap(Indeks_138[i_138], Indeks_138[IndeksTengah_138]);
     }
 }
 
@@ -309,37 +306,43 @@ int main() {
     string sentence_138; // Variabel untuk menyimpan kalimat yang dimasukkan oleh pengguna
     char Target_138; // Variabel untuk menyimpan karakter yang akan dicari
 
-    cout << "\n======= SELAMAT DATANG DI PROGRAM BINARY SEARCH BY RICO ADE PRATAMA =======" << endl;
+    cout << "\n======= SELAMAT DATANG DI PROGRAM BINARY SEARCH BY RICO ADE PRATAMA =======" << endl; // Judul Program
     cout << "\n>> Masukkan kalimat : ";
     getline(cin, sentence_138); // Mengambil input kalimat dari pengguna
 
-    // Membuat array untuk menyimpan karakter dan indeks asli mereka
+    // Membuat array untuk menyimpan karakter
     int PanjangSentence_138 = sentence_138.size(); // Menghitung panjang kalimat
-    char charArray[100]; // Array untuk menyimpan karakter-karakter dari kalimat (mengabaikan spasi)
-    int Indeks_138[100]; // Array untuk menyimpan indeks asli dari karakter-karakter
+    char KarakterArray_138 [100]; // Array untuk menyimpan karakter-karakter dari kalimat (mengabaikan spasi)
     int Size_138 = 0; // Variabel untuk melacak jumlah karakter non-spasi
 
-    // Mengisi charArray dan Indeks_138 dengan karakter-karakter dari kalimat dan indeks aslinya
+    // Mengisi KarakterArray_138  dengan karakter-karakter dari kalimat
     for (int i_138 = 0; i_138 < PanjangSentence_138; ++i_138) {
         if (sentence_138[i_138] != ' ') {  // Mengabaikan spasi
-            charArray[Size_138] = sentence_138[i_138]; // Menyimpan karakter ke charArray
-            Indeks_138[Size_138] = i_138; // Menyimpan indeks asli dari karakter ke Indeks_138
+            KarakterArray_138 [Size_138] = sentence_138[i_138]; // Menyimpan karakter ke KarakterArray_138 
             ++Size_138; // Menambah ukuran dari array yang telah diisi
         }
     }
 
-    // Mengurutkan array karakter menggunakan selection sort
-    selectionSort_138(charArray, Indeks_138, Size_138);
-
     cout << ">> Masukkan huruf yang ingin dicari : ";
-    cin >> Target_138; // Mengambil input karakter yang akan dicari dari pengguna
+    cin >> Target_138;
+
+    // Mengurutkan array karakter menggunakan selection sort
+    selectionSort_138(KarakterArray_138 , Size_138);
+
+    // Menampilkan daftar huruf yang sudah diurutkan sesuai abjad
+    cout << "== Daftar huruf yang sudah diurutkan sesuai abjad : ";
+    for (int i_138 = 0; i_138 < Size_138; ++i_138) {
+        cout << KarakterArray_138 [i_138] << " ";
+    }
 
     // Mencari huruf dalam array yang telah diurutkan
-    int Index_138 = binarySearch_138(charArray, Indeks_138, Size_138, Target_138);
+    int Index_138 = binarySearch_138(KarakterArray_138 , Size_138, Target_138);
 
-    // Menampilkan hasil pencarian
+    cout << endl;
+
+    // Menampilkan hasil pencarian dan daftar huruf yang sudah diurutkan
     if (Index_138 != -1) {
-        cout << "[2138] Huruf '" << Target_138 << "' ditemukan pada indeks ke-" << Index_138 << " dalam kalimat." << endl;
+        cout << "[2138] Huruf '" << Target_138 << "' ditemukan pada urutan ke-" << Index_138 << " dalam urutan abjad." << endl;
     } else {
         cout << "[2138] Huruf '" << Target_138 << "' tidak ditemukan dalam kalimat." << endl;
     }
@@ -351,16 +354,17 @@ int main() {
 
 ```
 #### Output:
-![SS_Unguided1_Laprak7_2311102138_RicoAdePratama_S1IF-11-D.png](/pertemuan08/LAPRAK08_RICO%20A.P_2311102138_S1IF-11-D/Foto%20Output/SS_Unguided1_Laprak8_2311102138_RicoAdePratama_S1IF-11-D.png)
+![SS_Unguided1_Laprak8_2311102138_RicoAdePratama_S1IF-11-D.png](/pertemuan08/LAPRAK08_RICO%20A.P_2311102138_S1IF-11-D/Foto%20Output/SS_Unguided1_Laprak8_2311102138_RicoAdePratama_S1IF-11-D.png)
 
-Kode di atas digunakan untuk implementasi struktur data Queue atau antrian dengan menggunakan linked list di C++. Antrian diimplementasikan sebagai kelas yang disebut 'Queue', yang memiliki penunjuk depan dan penunjuk belakang untuk melacak elemen depan dan belakang antrian. Antrian dapat menyimpan string sebagai elemennya.
-Kelas Queue memiliki beberapa metode untuk memanipulasi antrian:
+Kode di atas digunakan untuk implementasi struktur data pencarian biner di C++ yang mencari karakter tertentu dalam array karakter yang diurutkan. Berikut rincian programnya:
 
 - Deklarasi dan Inisialisasi Variabel :
   - `PanjangSentence_138`: Menyimpan panjang kalimat yang dimasukkan oleh pengguna.
   - `charArray`: Array untuk menyimpan karakter-karakter non-spasi dari kalimat.
   - `Indeks_138`: Array untuk menyimpan indeks asli dari karakter-karakter non-spasi.
   - `Size_138`: Variabel yang melacak jumlah karakter non-spasi yang dimasukkan ke dalam `charArray` dan `Indeks_138`.
+  - `sentence_138`: variabel string untuk menyimpan kalimat yang dimasukkan oleh pengguna
+  - `i_138`, `j_138`, `Kiri_138`, `Kanan_138`, `Tengah_138`, `IndeksTengah_138`: variabel integer untuk perulangan dan pencarian
 
 - Loop untuk Mengisi `charArray` dan `Indeks_138`:
   - Loop ini iterasi melalui setiap karakter dalam `sentence_138`.
@@ -373,175 +377,153 @@ Kelas Queue memiliki beberapa metode untuk memanipulasi antrian:
 - Hasil Pencarian :
   - Jika `Target_138` ditemukan, indeks asli karakter tersebut ditampilkan.
   - Jika tidak ditemukan, pesan bahwa karakter tidak ditemukan ditampilkan.
+  - Menunggu Masukan Pengguna : Terakhir, program menunggu pengguna menekan tombol sebelum menghentikan penggunaan (yang khusus untuk Windows).`_getche()`
 
-  Program ini dalam penggunaannya menggunakan output dari code otomatis. Lebih jelasnya yang hasil programnya seperti gambar output diatas.
+  Contoh Programnya user memasukkan kalimat nama sendiri, misalnya "RICO ADE PRATAMA", dan masukkan huruf yang ingin dicari 'O'. Jadi daftar huruf yang sudah diurutkan menjadi A A A A C D E I M O P R R T. Lebih jelasnya yang hasil programnya seperti gambar output diatas.
 
 
-### 2. [Dari nomor 1 buatlah konsep antri dengan atribut Nama mahasiswa dan NIM Mahasiswa]
+### 2. [Buatlah sebuah program yang dapat menghitung banyaknya huruf vocal dalam sebuah kalimat!]
 
 ```C++
-// LAPRAK 7 : UNGUIDED 2
+// LAPRAK 8 : UNGUIDED 2
 // RICO ADE PRATAMA
 // 2311102138
 // S1 IF-11-D
 
-// Program dari nomor 1, membuat konsep antri dengan atribut Nama mahasiswa dan NIM Mahasiswa
+// Program menghitung banyaknya huruf vocal dalam sebuah kalimat
 #include <iostream>
-#include <string>
+#include <cctype> // Untuk fungsi tolower
 
 using namespace std;
 
-const int maksimalQueue_138 = 5;  // Maksimal antrian adalah 5
-
-// Node untuk menyimpan data dan pointer ke node berikutnya
-struct Node {
-    string Nama_138;
-    string NIM_138;
-    Node* next_138;
-};
-
-class Queue {
-private:
-    Node* front_138; // Node depan dari antrian
-    Node* rear_138;  // Node belakang dari antrian
-
-public: 
-    Queue() { // Konstruktor untuk menginisialisasi antrian kosong
-        front_138 = nullptr;
-        rear_138 = nullptr;
-    }
-
-    // Fungsi untuk menambahkan data ke antrian
-    void enqueue_138(const string& Nama_138, const string& NIM_138) {
-        Node* newNode_138 = new Node;
-        newNode_138->Nama_138 = Nama_138;
-        newNode_138->NIM_138 = NIM_138;
-        newNode_138->next_138 = nullptr;
-        
-        // Jika antrian kosong
-        if (isEmpty_138()) { // Jika antrian kosong maka front_138 dan rear_138 menunjuk ke newNode_138 yang baru dibuat 
-            front_138 = rear_138 = newNode_138;
-        } else { // Jika antrian tidak kosong maka rear_138 menunjuk ke newNode_138 yang baru dibuat
-            rear_138->next_138 = newNode_138;
-            rear_138 = newNode_138;
-        }
-        
-        cout << ">> Mahasiswa dengan Nama : " << newNode_138->Nama_138 << ", dan NIM : " << newNode_138->NIM_138 << " telah ditambahkan ke dalam antrian." << endl;
-    }
-
-    // Fungsi untuk menghapus data dari antrian
-    void dequeue_138() {
-        if (isEmpty_138()) { // Jika antrian kosong maka tampilkan pesan "Antrian kosong" dan kembalikan nilai void
-            cout << "Antrian kosong." << endl;
-            return;
-        }
-
-        Node* temp_138 = front_138; // Simpan node front_138 ke dalam variabel temp_138 untuk dihapus nantinya 
-        front_138 = front_138->next_138; // Geser front_138 ke node selanjutnya 
-
-        cout << ">> Mahasiswa dengan Nama : " << temp_138->Nama_138 << ", dan NIM : " << temp_138->NIM_138 << " telah dihapus dari antrian." << endl; // Tampilkan data mahasiswa yang dihapus dari antrian 
-        delete temp_138; // Hapus node yang disimpan di variabel temp_138
-
-        // Jika setelah penghapusan antrian menjadi kosong
-        if (front_138 == nullptr) {
-            rear_138 = nullptr;
-        }
-    }
-
-    // Fungsi untuk menampilkan seluruh antrian
-    void displayQueue_138() {
-        if (isEmpty_138()) { // Jika antrian kosong maka tampilkan pesan "Data antrian:" dan tampilkan pesan "(kosong)"
-            cout << "\n[2138] Data Antrian :" << endl;
-            for (int i_138 = 0; i_138 < maksimalQueue_138; i_138++) {
-                cout << i_138 + 1 << ". (kosong)" << endl;
-            }
-        } else { // Jika antrian tidak kosong maka tampilkan data antrian yang ada
-            cout << "\n[2138] Data Antrian :" << endl;
-            Node* current_138 = front_138;
-            int i_138 = 1;
-            while (current_138 != nullptr) { // Selama current_138 tidak menunjuk ke nullptr maka tampilkan data antrian yang ada 
-                cout << i_138 << ". " << "Nama : " << current_138->Nama_138 << ", NIM : " << current_138->NIM_138 << endl;
-                current_138 = current_138->next_138;
-                i_138++;
-            }
-            for (; i_138 <= maksimalQueue_138; i_138++) { // Tampilkan pesan "(kosong)" untuk antrian yang kosong 
-                cout << i_138 << ". (kosong)" << endl;
-            }
-        }
-    }
-
-    // Fungsi untuk memeriksa apakah antrian kosong
-    bool isEmpty_138() {
-        return front_138 == nullptr;
-    }
-
-    // Fungsi untuk mengembalikan jumlah elemen dalam antrian
-    int countQueue_138() {
-        int count_138 = 0;
-        Node* current_138 = front_138;
-        while (current_138 != nullptr) { 
-            count_138++;
-            current_138 = current_138->next_138;
-        }
-        return count_138; // Kembalikan jumlah elemen dalam antrian
-    }
-
-    // Fungsi untuk menghapus semua elemen dalam antrian
-    void clearQueue_138() {
-        while (!isEmpty_138()) { // Selama antrian tidak kosong maka hapus elemen dalam antrian
-            dequeue_138(); // Hapus elemen dalam antrian 
-        } 
-        cout << "Antrian telah dibersihkan." << endl;
-    }
-};
-
-int main() {
-    Queue queue; // Buat objek queue dari class Queue
-    queue.enqueue_138("Rico Ade Pratama", "2311102138");
-    queue.enqueue_138("Freya JKT48", "2311100000");
-    queue.displayQueue_138();
-    cout << "[2138] Jumlah Antrian = " << queue.countQueue_138() << endl;
-    queue.dequeue_138();
-    queue.displayQueue_138();
-    cout << "[2138] Jumlah Antrian = " << queue.countQueue_138() << endl;
-    queue.dequeue_138();
-    queue.displayQueue_138();
-    cout << "[2138] Jumlah Antrian = " << queue.countQueue_138() << endl;
-
-    return 0;
+// Fungsi untuk memeriksa apakah sebuah karakter adalah vocal
+bool isVowel_138(char Karakter_138) {
+    // Konversi karakter menjadi huruf kecil agar pemeriksaan tidak case-sensitive
+    Karakter_138 = tolower(Karakter_138);
+    // Periksa apakah karakter adalah salah satu dari 'a', 'e', 'i', 'o', 'u'
+    return (Karakter_138 == 'a' || Karakter_138 == 'e' || Karakter_138 == 'i' || Karakter_138 == 'o' || Karakter_138 == 'u');
 }
 
+// Fungsi untuk menghitung banyaknya huruf vocal dalam sebuah kalimat
+int countVowels_138(const string &Kalimat_138) {
+    int Count_138 = 0; // Variabel untuk menghitung jumlah vocal
+    // Loop melalui setiap karakter dalam string Kalimat_138
+    for (char Karakter_138 : Kalimat_138) {
+        // Periksa apakah karakter adalah vocal menggunakan fungsi isVowel_138
+        if (isVowel_138(Karakter_138)) {
+            Count_138++; // Tambahkan ke Count_138 jika karakter adalah vocal
+        }
+    }
+    return Count_138; // Kembalikan jumlah vocal
+}
+
+int main() {
+    string Kalimat_138; // Variabel untuk menyimpan kalimat yang dimasukkan oleh pengguna
+
+    cout << "\n======= SELAMAT DATANG DI PROGRAM MENCARI KALIMAT VOCAL BY RICO ADE PRATAMA =======" << endl; // Nama Program
+    cout << "\n>> Masukkan sebuah kalimat : ";
+    getline(cin, Kalimat_138); // Membaca input kalimat dari pengguna
+
+    // Menghitung jumlah huruf vocal dalam kalimat menggunakan fungsi countVowels_138
+    int vowelCount_138 = countVowels_138(Kalimat_138);
+
+    // Menampilkan hasil perhitungan jumlah huruf vocal
+    cout << "[2138] Banyaknya huruf vocal dalam kalimat adalah : " << vowelCount_138 << endl;
+
+    return 0; // Mengembalikan nilai 0 menandakan bahwa program berakhir dengan sukses
+}
 
 ```
 #### Output:
-![SS_Unguided2_Laprak7_2311102138_RicoAdePratama_S1IF-11-D.png](/pertemuan07/LAPRAK07_RICO%20A.P_2311102138/Foto%20Output/SS_Unguided2_Laprak7_2311102138_RicoAdePratama_S1IF-11-D.png)
+![SS_Unguided2_Laprak8_2311102138_RicoAdePratama_S1IF-11-D.png](/pertemuan08/LAPRAK08_RICO%20A.P_2311102138_S1IF-11-D/Foto%20Output/SS_Unguided2_Laprak8_2311102138_RicoAdePratama_S1IF-11-D.png)
 
-Kode di atas digunakan untuk implementasi dari struktur data Queue atau antrian pada C++. Dengan dirancang khusus untuk menyimpan data siswa dengan atribut nama dan nomor induk siswa (NIM). Antrian memiliki kapasitas maksimal 5 siswa. Program ini menggunakan implementasi daftar tertaut dari antrian, dengan penunjuk depan dan belakang untuk melacak elemen depan dan belakang antrian.
-Kelas 'Queue' memiliki beberapa metode untuk memanipulasi antrian:
-- 'enqueue_138': menambahkan siswa baru ke belakang antrian dengan nama dan ID siswa yang diberikan.
-- 'dequeue_138': mengeluarkan siswa depan dari antrian dan mencetak nama dan ID siswanya.
-- 'displayQueue_138': mencetak status antrian saat ini, menampilkan nama dan ID siswa setiap siswa dalam antrian.
-- 'isEmpty_138': memeriksa apakah antrian kosong dan mengembalikan nilai boolean yang menunjukkan hasilnya.
-- 'countQueue_138': mengembalikan jumlah siswa yang sedang dalam antrian.
-- 'clearQueue_138': mengeluarkan semua siswa dari antrian dan mencetak pesan yang menunjukkan bahwa antrian telah dihapus.
+Kode di atas digunakan untuk implementasi dari struktur data algoritma Sequential Search yang digunakan untuk menghitung banyaknya huruf vokal pada sebuah kalimat yang sudah di input. Berikut rincian programnya :
 
-  Fungsi ini 'main' mendemonstrasikan cara menggunakan 'Queue' kelas dengan membuat objek antrian, menambahkan beberapa siswa ke antrian, menampilkan antrian, dan mengeluarkan siswa dari antrian. Program ini juga menggunakan metode 'isEmpty_138', 'countQueue_138', dan 'clearQueue_138' untuk menunjukkan status antrian saat ini.
+- `Kalimat_138` : variabel string untuk menyimpan kalimat yang dimasukkan oleh pengguna
+- `Karakter_138` : variabel char untuk menyimpan karakter pada setiap iterasi
+- `Count_138` : variabel integer untuk menyimpan jumlah huruf vokal
+- `i_138` : variabel integer untuk perulangan
+- Fungsi `isVowel_138()` : Digunakan untuk memeriksa apakah sebuah karakter adalah huruf vokal atau tidak. Fungsi ini memeriksa apakah karakter tertentu adalah vokal. Ini mengubah karakter menjadi huruf kecil untuk membuat pemeriksaan tidak peka huruf besar-kecil dan kemudian memeriksa apakah karakter tersebut adalah salah satu vokal standar ('a', 'e', ​​'i', 'o', 'u'). `isVowel_138`.
+- Fungsi `countVowels_138()` : Digunakan untuk menghitung banyaknya huruf vokal pada kalimat yang telah diinputkan. Fungsi menghitung jumlah vokal dalam kalimat tertentu. Ini mengulangi setiap karakter dalam kalimat dan menggunakan fungsi untuk memeriksa apakah karakter tersebut adalah vokal. Jika ya, itu akan menambah penghitung. Fungsi ini mengembalikan jumlah total vokal. `countVowels_138`,`isVowel_138`.
+- Menghitung Vokal : Program memanggil fungsi dengan kalimat masukan dan menyimpan hasilnya dalam variabel. `countVowels_138`,`vowelCount_138`.
 
-  Program ini dalam penggunaannya menggunakan output dari code otomatis. Lebih jelasnya yang hasil programnya seperti gambar output diatas.
+ Contoh Programnya misal user memasukkan sebuah kalimat nama sendiri, misalnya "RICO ADE PRATAMA", maka banyaknya huruf vocal yang ada pada kalimat tersebut adalah 7. Lebih jelasnya yang hasil programnya seperti gambar output diatas.
+
+
+### 3. [Diketahui data = 9, 4, 1, 4, 7, 10, 5, 4, 12, 4. Hitunglah berapa banyak angka 4 dengan menggunakan algoritma Sequential Search!]
+
+```C++
+// LAPRAK 8 : UNGUIDED 3
+// RICO ADE PRATAMA
+// 2311102138
+// S1 IF-11-D
+
+// Program Algoritma Sequential Search
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int n_138 = 10; // Jumlah elemen dalam array, yang berarti 10
+    int Data_138 [n_138] = {9, 4, 1, 4, 7, 10, 5, 4, 12, 4}; // Array data yang akan dicari
+    int Target_138 = 4; // Target yang akan dicari dalam array
+    int Count_138 = 0; // Variabel untuk menghitung banyaknya kemunculan target dalam array
+
+    // Melakukan pencarian sequential untuk menghitung banyaknya angka 4 dalam array
+    for (int i_138 = 0; i_138 < n_138; i_138++) {
+        if (Data_138 [i_138] == Target_138) {
+            Count_138++; // Jika angka target ditemukan, tambahkan 1 ke variabel Count_138
+        }
+    }
+
+    // Menampilkan hasil pencarian
+    cout << "\n======= SELAMAT DATANG DI PROGRAM SEQUENTIAL SEARCH BY RICO ADE PRATAMA =======" << endl; // Judul Program
+    cout << "\n>> Data : {9, 4, 1, 4, 7, 10, 5, 4, 12, 4}" << endl; // Menampilkan data yang akan dicari
+    cout << "[2138] Angka " << Target_138 << " ditemukan sebanyak " << Count_138 << " kali." << endl; // Menampilkan hasil pencarian
+
+    return 0; // Mengembalikan nilai 0 menandakan bahwa program berakhir dengan sukses
+}
+```
+#### Output:
+![SS_Unguided3_Laprak8_2311102138_RicoAdePratama_S1IF-11-D.png](/pertemuan08/LAPRAK08_RICO%20A.P_2311102138_S1IF-11-D/Foto%20Output/SS_Unguided3_Laprak8_2311102138_RicoAdePratama_S1IF-11-D.png)
+
+Kode di atas digunakan untuk implementasi dari struktur data algoritma pencarian sequential search yang digunakan untuk menghitung banyaknya kemunculan angka 4 dalam sebuah array. Berikut adalah langkah-langkah dari algoritma pada program ini:
+
+- `n_138` : variabel integer untuk menyimpan jumlah elemen dalam array
+- `Data_138` : array integer yang akan dicari
+- `Target_138` : variabel integer yang menyimpan angka target yang akan dicari
+- `Count_138` : variabel integer untuk menghitung banyaknya kemunculan target dalam array
+- `i_138` : variabel integer untuk perulangan
+
+- Fungsi Utama : Fungsi ini merupakan titik masuk program. Ini pertama menginisialisasi array dengan nilai {9, 4, 1, 4, 7, 10, 5, 4, 12, 4} dan menetapkan nilai target ke 4. `mainData_138`.
+- Pencarian Sekuensial : Program kemudian melakukan pencarian berurutan pada array untuk menemukan kemunculan nilai target 4. Hal ini dilakukan dengan mengulangi setiap elemen dalam array dan memeriksa apakah elemen saat ini cocok dengan nilai target. Jika ditemukan kecocokan, variabel akan bertambah.`Data_138`,`Count_138`
+- Output : Setelah pencarian selesai, program mencetak pesan selamat datang dan kemudian menampilkan array dan hasil pencarian, yaitu hitungan kemunculan nilai target 4.`Data_138`.
+
+ Contoh Programnya mencari banyaknya nilai 4 menggunakan Sequential Search dari array dengan nilai {9, 4, 1, 4, 7, 10, 5, 4, 12, 4}. Jadi hasilnya angka 4 ditemukan sebanyak 4 kali. Lebih jelasnya yang hasil programnya seperti gambar output diatas.
 
 
 ## Kesimpulan
-Kesimpulannya, pada modul 7 ini Queue atau antrian merupakan struktur data LIFO (Last In First Out) dimana suatu struktur data yang terbentuk dari barisan hingga yang terurut dari satuan data. Queue mirip dengan konsep antrian pada kehidupan sehari-hari, dimana konsumen yang datang lebih dulu akan dilayani terlebih dahulu. Implementasinya dapat menggunakan array atau linked list, dengan dua pointer utama, yaitu front dan rear. Berbeda dengan struktur data lain seperti stack, penambahan dan penghapusan elemen dalam queue terjadi pada ujung yang berbeda, yaitu front untuk Dequeue dan rear untuk Enqueue.
+Kesimpulannya, pada modul 8 ini Algoritma Searching merupakan struktur data dari urutan langkah-langkah yang digunakan untuk menemukan data tertentu dalam kumpulan data. Ada 2 macam yaitu Binary Search dan Sequential Search. Binary search adalah algoritma pencarian untuk data terurut. Pencarian dilakukan dengan membandingkan data yang dicari dengan data di tengah. Sedangkan Sequential Search adalah algoritma pencarian untuk data yang acak atau tidak terurut. Dengan Implementasi paling sederhana, di mana setiap elemen array dibaca satu per satu dari indeks terkecil hingga terbesar, atau sebaliknya.
 
-Keunggulan atau Kelebihan Queue yaitu Implementasi yang sederhana, dan sangat efisiensi dalam hal Waktu. Queue jika menggunakan linked list lebih fleksibel dan efisien untuk penambahan dan penghapusan elemen di tengah antrian. Ada banyak jenis-jenis operasi. Queue menggunakan Prinsip FIFO yaitu yang memastikan bahwa data diproses sesuai urutan penerimaannya, membuat antrian berguna dalam aplikasi di mana data perlu diproses dalam urutan tertentu.
+Perbedaan utama antara Binary Search dan Sequential Search terletak pada cara kerja, efisiensi, persyaratan data, dan penerapannya :
 
-Kekurangan Queue antara lain seperti Ukuran terbatas atau overhead memori, ketika menambahkan dan menghapus elemen di tengah antrian tidak efisien karena membutuhkan pergeseran elemen lain. Batasan kapasitas pada implementasi dengan array dan Performa yang buruk pada implementasi dengan array jika terdapat operasi dequeue yang sering dilakukan. Queue memiliki sifat LIFO yang tidak dapat diubah, Artinya elemen yang pertama kali masuk akan menjadi elemen yang pertama kali dikeluarkan, Ini membuat queue kurang fleksibel untuk digunakan dalam beberapa situasi yang memerlukan akses acak atau pengubahan urutan data. Tidak dapat digunakan untuk semua kasus, dan Tidak mendukung operasi pencarian.
+ Binary Search :
+- Cara Kerjanya memeriksa setiap elemen secara berurutan dari awal hingga akhir atau sampai target ditemukan.
+- Efisiensinya cenderung Kurang efisien untuk kumpulan data besar. Kompleksitas waktu rata-rata dan terburuk adalah O(n).
+- Persyaratan Datanya tidak memerlukan data terurut.
+- Penerapannya cocok untuk data kecil atau data yang tidak terurut.
+
+ Sequential Search :
+- Cara Kerjanya membagi kumpulan data menjadi dua bagian secara terus-menerus dan hanya memeriksa bagian yang relevan.
+- Efisiensinya cenderung lebih efisien untuk kumpulan data besar. Kompleksitas waktu rata-rata dan terburuk adalah O(log n).
+- Persyaratan Datanya memerlukan data yang sudah terurut.
+- Penerapannya cocok untuk data besar yang sudah terurut.
 
 ## Referensi
- [1] Dr. Joseph Teguh Santoso. Struktur Data dan ALgoritma. Semarang: Yayasan Prima Agus Teknik. 2021.
+ [1] Kartiko Ardi Widodo, Suryo Adi Wibowo, dan Nurlaily Vendyansyah. "PENERAPAN SEQUENTIAL SEARCH UNTUK PENGELOLAAN DATA BARANG", Vol. 15 No. 1 Mei 2021.
 
- [2] Muhammad Nugraha. Dasar Pemrograman Dengan C++ Materi Paling Dasar untuk Menjadi Programmer Berbagai Platform. Yogyakarta. 2021.
+ [2] Dr. Joseph Teguh Santoso. Struktur Data dan ALgoritma. Semarang: Yayasan Prima Agus Teknik. 2021.
 
- [3] Mulyana A. E-Books Cara Mudah Mempelajari Algoritma dan Struktur Data. 2023.
+ [3] Muhammad Nugraha. Dasar Pemrograman Dengan C++ Materi Paling Dasar untuk Menjadi Programmer Berbagai Platform. Yogyakarta. 2021.
 
- [4] Rafsanjani, Malik Akbar Hashemi. "Implementasi Algoritma Pengurutan General Purpose dan Berbasis Komparasi untuk Data Berkategori dalam Waktu Linier Tanpa Paralelisasi", 2021.
+ [4] Mulyana A. E-Books Cara Mudah Mempelajari Algoritma dan Struktur Data. 2023.
