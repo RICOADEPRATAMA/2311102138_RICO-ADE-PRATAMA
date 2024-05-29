@@ -47,7 +47,7 @@ Contoh Ilustrasi Tree :
 
 ## D. JENIS-JENIS GRAPH DAN TREE
 
-#### Graph atau Graf(Lintasan) :
+### Graph atau Graf(Lintasan) :
  Jenis-jenis graf umum :
 - Graf Sederhana: Graf ini tidak memiliki sisi ganda atau gelang. Setiap sisi hanya menghubungkan dua simpul dan setiap pasangan simpul terhubung oleh satu sisi saja.
 - Graf Tak-Sederhana: Graf ini bisa memiliki sisi ganda atau gelang. Sisi ganda berarti ada lebih dari satu sisi yang menghubungkan sepasang simpul, sementara gelang adalah sisi yang menghubungkan simpul ke dirinya sendiri.
@@ -66,7 +66,7 @@ Contoh Ilustrasi Tree :
 - Graf Siklik (Cyclic Graph): Terdapat jalur (path) yang membentuk siklus dalam graf.
 - Graf Asiklik (Acyclic Graph): Tidak terdapat siklus dalam graf.
 
-#### Tree(Pohon) :
+### Tree(Pohon) :
 - Binary Tree: Setiap simpul memiliki maksimal dua anak.
 - Binary Search Tree (BST): Binary tree yang terurut, memudahkan pencarian data.
 - AVL Tree: Self-balancing binary search tree, menjaga keseimbangan untuk efisiensi pencarian.
@@ -84,16 +84,16 @@ Contoh Ilustrasi Tree :
 - Tree: Struktur direktori file, pohon keluarga, pengambilan keputusan (decision tree), struktur data heap, dll.
 
 ## G. IMPEMENTASI GRAPH DAN TREE
-- Graph: Adjacency matrix, adjacency Linked List.
+### Graph: Adjacency matrix, adjacency Linked List.
 ![Contoh Ilustrasi Matriks.png](/pertemuan09/LAPRAK09_2311102138_Rico%20Ade%20Pratama_S1IF-11-D/Foto%20dan%20Output/Contoh%20Ilustrasi%20Graph%20Matriks.png)
 ![Contoh Ilustrasi Linked List.png](/pertemuan09/LAPRAK09_2311102138_Rico%20Ade%20Pratama_S1IF-11-D/Foto%20dan%20Output/Contoh%20Ilustrasi%20Graph%20Linked%20list.png)
 ![Contoh Ilustrasi Linked List2.png](/pertemuan09/LAPRAK09_2311102138_Rico%20Ade%20Pratama_S1IF-11-D/Foto%20dan%20Output/Contoh%20Ilustrasi%20Graph%20Linked%20List2.png)
 
-- Tree: Node dan Pointer, Array, Double Linked List.
+### Tree: Node dan Pointer, Array, Double Linked List.
 ![Contoh Ilustrasi Tree.png](/pertemuan09/LAPRAK09_2311102138_Rico%20Ade%20Pratama_S1IF-11-D/Foto%20dan%20Output/Contoh%20Ilustrasi%20Tree%20Binary.png)
 ![Contoh Ilustrasi Tree Pointer.png](/pertemuan09/LAPRAK09_2311102138_Rico%20Ade%20Pratama_S1IF-11-D/Foto%20dan%20Output/Contoh%20Ilustrasi%20Tree%20Pointer.png)
 
-## KEKURANGAN DAN KELEBIHAN GRAPH DAN TREE
+## H. KEKURANGAN DAN KELEBIHAN GRAPH DAN TREE
 - Kekurangan Graph :
 Graph menggunakan banyak pointer yang dapat rumit untuk ditangani, memiliki kompleksitas memori yang besar, dan operasi perkalian graph dapat sulit dilakukan.
 - Kelebihan Graph :
@@ -566,7 +566,8 @@ Cantumkan NIM pada salah satu variabel di dalam program.
 Contoh : int nama_22102003;
 
 ### 1. [Buatlah program graph dengan menggunakan inputan user untuk menghitung jarak dari sebuah kota ke kota lainnya.]
-Output Program
+ Output Program :
+
 ![Soal_Guided1_Laprak9.png](/pertemuan09/LAPRAK09_2311102138_Rico%20Ade%20Pratama_S1IF-11-D/Foto%20dan%20Output/Soal_Guided1_Laprak9.png)
 
 
