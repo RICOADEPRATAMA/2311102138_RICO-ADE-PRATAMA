@@ -22,7 +22,7 @@ int main() {
     // Mendeklarasikan vektor untuk menyimpan nama-nama simpul
     vector<string> NamaSimpul_2311102138(JumlahSimpul_2311102138);
     // Mendeklarasikan matriks untuk menyimpan bobot (jarak) antar simpul
-    vector<vector<int>> bobot(JumlahSimpul_2311102138, vector<int>(JumlahSimpul_2311102138));
+    vector<vector<int>> bobot_2311102138(JumlahSimpul_2311102138, vector<int>(JumlahSimpul_2311102138));
 
     // Meminta pengguna memasukkan nama-nama simpul
     cout << "Silakan masukan nama simpul" << endl;
@@ -38,7 +38,7 @@ int main() {
         for (int j_2311102138 = 0; j_2311102138 < JumlahSimpul_2311102138; ++j_2311102138) {
             // Meminta input bobot (jarak) dari simpul i ke simpul j
             cout << NamaSimpul_2311102138[i_2311102138] << "--> " << NamaSimpul_2311102138[j_2311102138] << " = ";
-            cin >> bobot[i_2311102138][j_2311102138]; // Membaca input bobot dan menyimpannya ke dalam matriks
+            cin >> bobot_2311102138[i_2311102138][j_2311102138]; // Membaca input bobot dan menyimpannya ke dalam matriks
         }
     }
 
@@ -54,7 +54,7 @@ int main() {
     for (int i_2311102138 = 0; i_2311102138 < JumlahSimpul_2311102138; ++i_2311102138) {
         cout << NamaSimpul_2311102138[i_2311102138] << "     "; // Menampilkan nama simpul sebagai header baris
         for (int j_2311102138 = 0; j_2311102138 < JumlahSimpul_2311102138; ++j_2311102138) {
-            cout << bobot[i_2311102138][j_2311102138] << "  "; // Menampilkan bobot (jarak) antar simpul
+            cout << bobot_2311102138[i_2311102138][j_2311102138] << "  "; // Menampilkan bobot (jarak) antar simpul
         }
         cout << endl;
     }

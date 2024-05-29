@@ -1,3 +1,9 @@
+// LAPRAK 9 : UNGUIDED 2
+// RICO ADE PRATAMA
+// 2311102138
+// S1 IF-11-D
+
+// Modifikasi guided tree diatas dengan program menu menggunakan input data tree dari user dan berikan fungsi tambahan untuk menampilkan node child dandescendant dari node yang diinput kan!
 #include <iostream> // Library untuk operasi input dan output
 #include <iomanip> // Library untuk merapihkan ,enu output
 #include <queue> // Library untuk menggunakan queue dalam BFS
